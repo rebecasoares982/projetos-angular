@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --blue-1: #2242c2;
-  --blue-2: #0368ec;
+  --blue-1: hwb(210 72% 0%);
+  --blue-2: #7ab3fd;
   --white: #fff;
   --grey-1: #ededed;
   --shadow-dark: rgba(0, 0, 0, 0.3);
-  --shadow-light: rgba(255, 255, 255, 0.277);
+  --shadow-light: rgba(230, 235, 241, 0.253);
 }
 
 * {
@@ -26,7 +26,7 @@ body {
 }
 
 fa-icon {
-  color: #ffffff;
+  color: #545454;
 }
 
 .container {
