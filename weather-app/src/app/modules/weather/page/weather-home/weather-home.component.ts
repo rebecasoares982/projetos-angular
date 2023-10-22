@@ -14,7 +14,7 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
   private readonly destroy$: Subject<void> = new Subject();
   initialCityName = 'Feira de Santana';
   weatherDatas!: WeatherDatas;
-  searchIcon = faMagnifyingGlass;
+  searchIcon = faMagnifyingGlass
 
   constructor(private weatherService: WeatherService) { }
 
@@ -24,7 +24,7 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
 
   getWeatherDatas(cityName: string): void {
     this.weatherService
-      .getWeatherDatas('cityName')
+      .getWeatherDatas(cityName)
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: (response) => {
@@ -37,7 +37,6 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
 
   onSubmit(): void {
     this.getWeatherDatas(this.initialCityName);
-    console.log('CHAMOU A FUNÇÃO');
     this.initialCityName = '';
   }
 
