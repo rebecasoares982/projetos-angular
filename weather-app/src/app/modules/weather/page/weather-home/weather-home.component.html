@@ -1,22 +1,50 @@
-<div class="search">
-  <form #form="ngForm" (submit)="onSubmit()">
-    <input
-      type="text"
-      placeholder="Buscar localização"
-      name="city"
-      [(ngModel)]="initialCityName" fa
-    />
+<div class="nav-bar">
+  <div class="logo">
+    <img src="../../../../../assets/track weather.png" alt="Logomarca">
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Clima</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
 
-    <span (click)="onSubmit()">
-      <fa-icon
-        animation="fade"
-        style="--fa-animation-duration: 5s; cursor: pointer"
-        size="lg"
-        class="search-icon"
-        [icon]="searchIcon"
-      ></fa-icon>
-    </span>
-  </form>
+  <div class="menu-right">
+    <div>
+      <span>
+        <fa-icon style="cursor: pointer;" size="lg" class="facebook-icon" [icon]="faFacebook"></fa-icon>
+      </span>
+
+      <span>
+        <fa-icon style="cursor: pointer; margin-left: 3px;" size="lg" class="instagram-icon"
+          [icon]="faInstagram"></fa-icon>
+      </span>
+
+      <span>
+        <fa-icon style="cursor: pointer; margin-left: 3px;" size="lg" class="youtube-icon" [icon]="faYoutube"></fa-icon>
+      </span>
+
+      <span>
+        <fa-icon style="cursor: pointer; margin-left: 3px;" size="lg" class="twitter-icon" [icon]="faTwitter"></fa-icon>
+      </span>
+
+
+
+    </div>
+
+    <div class="search-bar">
+      <form #form="ngForm" (submit)="onSubmit()">
+        <input type="text" placeholder="Buscar localização" name="city" [(ngModel)]="initialCityName" fa />
+
+        <span (click)="onSubmit()">
+          <fa-icon animation="fade" style="--fa-animation-duration: 5s; cursor: pointer" size="lg" class="search-icon"
+            [icon]="searchIcon"></fa-icon>
+        </span>
+      </form>
+    </div>
+  </div>
 </div>
 
 <app-weather-card *ngIf="weatherDatas" [weatherDatasInput]="weatherDatas"></app-weather-card>

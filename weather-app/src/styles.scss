@@ -25,7 +25,7 @@ body {
   align-items: center;
 }
 
-fa-icon {
+.fa-icon {
   color: #fff;
 }
 
@@ -166,4 +166,82 @@ fa-icon {
 
 .search-icon {
   margin-left: -35px;
+}
+
+//Menu
+
+.nav-bar {
+  width: 890px;
+  background-color: #fff;
+  color: #7AC7C4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-height: 150px;
+  width: 250px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li:hover {
+  background-color: #7AC7C4;
+  color: #c2c2c2;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #396866;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  width: 145px;
+  align-items: center;
+  border: 2px solid #7AC7C4;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  color: #084745;
+  outline: none;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  color: #828282;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
