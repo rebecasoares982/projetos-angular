@@ -1,0 +1,19 @@
+*,
+*::before,
+*::before
+ {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+ }
+
+ :root
+ {
+  --color-bg: white;
+  --color-text: black;
+ }
+
+[data-theme="dark"] {
+  --color-bg: black;
+  --color-text:white;
+}
